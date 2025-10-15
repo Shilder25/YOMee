@@ -38,8 +38,8 @@ export default function HeroSection() {
         </Button>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-16 md:py-20">
-        <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+      <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-12 md:py-16">
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
           <motion.div 
             className="order-1 lg:order-1 flex justify-center lg:justify-start"
             initial={{ opacity: 0, x: -50 }}
@@ -50,7 +50,7 @@ export default function HeroSection() {
             <img
               src={heroPenguin}
               alt="YoMee the adorable penguin"
-              className="w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 object-contain"
+              className="w-64 h-64 md:w-96 md:h-96 lg:w-[500px] lg:h-[500px] object-contain"
               data-testid="img-hero-penguin"
             />
           </motion.div>
@@ -61,37 +61,37 @@ export default function HeroSection() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
           >
-            <h1 className="font-heading font-black text-6xl md:text-7xl lg:text-8xl mb-2 text-black dark:text-black leading-none uppercase stroke-text">
+            <h1 className="font-heading font-black text-7xl md:text-8xl lg:text-9xl mb-3 text-black dark:text-black leading-none uppercase stroke-text">
               YoMee
             </h1>
-            <h2 className="font-heading font-black text-5xl md:text-6xl lg:text-7xl mb-6 text-black dark:text-black leading-none">
+            <h2 className="font-heading font-black text-6xl md:text-7xl lg:text-8xl mb-8 text-black dark:text-black leading-none">
               萌萌企鹅
             </h2>
-            <p className="text-lg md:text-xl mb-8 text-black dark:text-black font-bold">
+            <p className="text-xl md:text-2xl lg:text-3xl mb-10 text-black dark:text-black font-bold">
               China's most adorable internet star
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start mb-6">
+            <div className="flex flex-col sm:flex-row gap-5 justify-center lg:justify-start mb-8">
               <Button
                 size="lg"
-                className="font-bold text-base md:text-lg px-10 py-6 rounded-lg bg-chart-3 text-white border-0 hover-elevate active-elevate-2 uppercase"
+                className="font-bold text-xl md:text-2xl px-12 py-8 rounded-xl bg-chart-3 text-white border-0 hover-elevate active-elevate-2 uppercase min-h-[60px]"
                 data-testid="button-follow"
                 onClick={() => console.log('Follow Now clicked')}
               >
-                Follow Now
+                Buy Now
               </Button>
               <Button
                 size="lg"
-                className="font-bold text-base md:text-lg px-10 py-6 rounded-lg bg-white text-black border-2 border-black hover-elevate active-elevate-2 uppercase"
+                className="font-bold text-xl md:text-2xl px-12 py-8 rounded-xl bg-white text-black border-2 border-black hover-elevate active-elevate-2 uppercase min-h-[60px]"
                 data-testid="button-watch"
                 onClick={() => console.log('Watch Videos clicked')}
               >
-                Videos
+                Chart
               </Button>
             </div>
 
-            <div className="inline-block bg-black rounded-lg px-6 py-3">
-              <p className="text-sm text-white font-mono" data-testid="text-social-handle">
+            <div className="inline-block rounded-xl px-8 py-5 border-4 border-black" style={{ backgroundColor: '#FF6B9D' }}>
+              <p className="text-base md:text-lg text-white font-mono font-bold" data-testid="text-social-handle">
                 CA: @YoMeePenguin on Douyin
               </p>
             </div>
