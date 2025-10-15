@@ -117,11 +117,65 @@ Preferred communication style: Simple, everyday language.
 - **cmdk**: Command palette component (available for future keyboard shortcuts)
 - **nanoid**: Unique ID generation
 
+**Animation & Interaction Libraries**
+- **framer-motion**: Production-ready motion library for React animations
+  - Scroll-triggered animations for section reveals
+  - Hover effects on interactive elements
+  - Hero section entrance animations
+- **react-snowfall**: Winter-themed particle animation system
+  - 100 white snowflake particles across viewport
+  - Configurable speed (0.5-1.5), wind (-0.5 to 0.5), and radius (0.5-3.0)
+  - Non-interactive overlay (pointer-events: none)
+
 **Assets & Media**
 - Static penguin character images stored in `attached_assets/`
 - Content markdown file with original reference material
 - AI-generated penguin images for various sections
 - **Douyin video embeds**: Real viral penguin videos from Douyin platform integrated via iframe embeds
-  - DouyinEmbed component for responsive video display
+  - DouyinEmbed component for responsive video display (340px × 600px fixed dimensions)
   - Videos showcase authentic YoMee moments from Chinese social media
   - Mix of user-provided images and real viral content for authenticity
+
+## Animation System
+
+### Global Effects
+**Snowfall Animation**
+- Continuous winter-themed snow particles across entire page
+- Fixed position overlay at z-index 9999
+- 100 snowflakes with varying sizes, speeds, and wind patterns
+- Non-intrusive (pointer-events disabled for user interactions)
+
+### Scroll Animations
+**AnimatedSection Component**
+- Reusable wrapper for all major sections (Meet, Story, HowTo, Community)
+- Fade-in effect: opacity 0 → 1
+- Slide-up effect: translateY(50px) → 0
+- Viewport trigger with -100px margin for early activation
+- Animations fire once per session using `viewport.once: true`
+- Custom easing curve for smooth, professional motion
+
+### Hero Section Animations
+**On Page Load**
+- Penguin image: slides in from left with fade (800ms duration)
+- Text content: slides in from right with fade (800ms duration, 200ms delay)
+- Staggered entrance creates dynamic first impression
+
+**Interactive Effects**
+- Penguin hover: scale(1.05) + rotate(5deg) transformation
+- Smooth 300ms transition on all hover states
+
+### Image Hover Effects
+**HowTo Section**
+- Waddling penguin: scale(1.03) + rotate(2deg) on hover
+- Subtle transformation maintains playful character
+
+**Community Section**
+- Community penguin: scale(1.03) + rotate(-2deg) on hover (counter-rotation)
+- Heart icon: continuous pulse animation (scale 1 → 1.1 → 1)
+- 1.5s loop with easeInOut timing for breathing effect
+
+### Technical Implementation
+- All animations use framer-motion's production-optimized engine
+- Hardware-accelerated transforms (scale, rotate, translateY)
+- Viewport-based triggers prevent animation overload
+- Smooth 60fps performance on modern devices
