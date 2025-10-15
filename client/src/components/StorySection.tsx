@@ -1,6 +1,5 @@
-import fishPenguin from "@assets/generated_images/Penguin_holding_fish_playfully_be518c79.png";
-import waddlingPenguin from "@assets/generated_images/Penguin_waddling_side_view_157e004b.png";
 import storyTitle from "@assets/image_1760564583305.png";
+import DouyinEmbed from "./DouyinEmbed";
 
 export default function StorySection() {
   return (
@@ -18,14 +17,10 @@ export default function StorySection() {
         
         <div className="grid lg:grid-cols-2 gap-6 lg:gap-8 items-start">
           <div className="order-2 lg:order-1">
-            <div className="relative rounded-2xl overflow-hidden border-4 border-black">
-              <img
-                src={fishPenguin}
-                alt="YoMee with a fish"
-                className="w-full h-auto"
-                data-testid="img-story-fish"
-              />
-            </div>
+            <DouyinEmbed 
+              videoId="7456017404477410600" 
+              data-testid="video-story-viral"
+            />
           </div>
           
           <div className="order-1 lg:order-2">

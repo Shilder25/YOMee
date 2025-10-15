@@ -121,3 +121,7 @@ Preferred communication style: Simple, everyday language.
 - Static penguin character images stored in `attached_assets/`
 - Content markdown file with original reference material
 - AI-generated penguin images for various sections
+- **Douyin video embeds**: Real viral penguin videos from Douyin platform integrated via iframe embeds
+  - DouyinEmbed component for responsive video display
+  - Videos showcase authentic YoMee moments from Chinese social media
+  - Mix of user-provided images and real viral content for authenticity

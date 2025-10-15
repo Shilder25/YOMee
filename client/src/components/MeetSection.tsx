@@ -1,5 +1,5 @@
-import playingPenguin from "@assets/generated_images/Penguin_playing_in_snow_3cf5fd3c.png";
 import meetTitle from "@assets/image_1760564557081.png";
+import DouyinEmbed from "./DouyinEmbed";
 
 export default function MeetSection() {
   return (
@@ -41,14 +41,10 @@ export default function MeetSection() {
           </div>
           
           <div className="order-1 lg:order-2">
-            <div className="relative rounded-2xl overflow-hidden border-4 border-black">
-              <img
-                src={playingPenguin}
-                alt="YoMee playing in the snow"
-                className="w-full h-auto"
-                data-testid="img-meet-penguin"
-              />
-            </div>
+            <DouyinEmbed 
+              videoId="7474871030444592419" 
+              data-testid="video-meet-penguin"
+            />
           </div>
         </div>
       </div>
