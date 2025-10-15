@@ -5,9 +5,9 @@ import communityTitle from "@assets/image_1760564599690.png";
 
 export default function CommunitySection() {
   return (
-    <section className="py-16 md:py-20 lg:py-24 bg-chart-2 dark:bg-chart-2" data-testid="section-community">
+    <section className="py-12 md:py-14 lg:py-16 bg-chart-2 dark:bg-chart-2" data-testid="section-community">
       <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
-        <h2 className="mb-12 lg:mb-16" data-testid="heading-community">
+        <h2 className="mb-6 lg:mb-8" data-testid="heading-community">
           <span className="sr-only">Join The Com!</span>
           <img 
             src={communityTitle} 
@@ -17,9 +17,9 @@ export default function CommunitySection() {
           />
         </h2>
         
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-12">
+        <div className="grid lg:grid-cols-2 gap-6 lg:gap-8 items-center mb-8">
           <div className="order-2 lg:order-1">
-            <div className="space-y-4 text-base md:text-lg text-black leading-relaxed">
+            <div className="space-y-3 text-base md:text-lg text-black leading-relaxed">
               <p>
                 Join the thousands of YoMee fans as part of a growing community around the fluffiest penguin on the web! Follow for the latest updates from YoMee's daily life and support this adorable journey from ice wonderland to the moon.
               </p>

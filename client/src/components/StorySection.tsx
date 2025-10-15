@@ -4,9 +4,9 @@ import storyTitle from "@assets/image_1760564583305.png";
 
 export default function StorySection() {
   return (
-    <section className="py-16 md:py-20 lg:py-24 bg-chart-3 dark:bg-chart-3" data-testid="section-story">
+    <section className="py-12 md:py-14 lg:py-16 bg-chart-3 dark:bg-chart-3" data-testid="section-story">
       <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
-        <h2 className="mb-12 lg:mb-16" data-testid="heading-story">
+        <h2 className="mb-6 lg:mb-8" data-testid="heading-story">
           <span className="sr-only">A Penguin in a Bull Market!</span>
           <img 
             src={storyTitle} 
@@ -16,7 +16,7 @@ export default function StorySection() {
           />
         </h2>
         
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+        <div className="grid lg:grid-cols-2 gap-6 lg:gap-8 items-start">
           <div className="order-2 lg:order-1">
             <div className="relative rounded-2xl overflow-hidden border-4 border-black">
               <img
@@ -29,7 +29,7 @@ export default function StorySection() {
           </div>
           
           <div className="order-1 lg:order-2">
-            <div className="space-y-4 text-base md:text-lg text-white leading-relaxed">
+            <div className="space-y-3 text-base md:text-lg text-white leading-relaxed">
               <p>
                 In China, where pandas are national treasures, penguins like YoMee are capturing hearts in a whole new way. While pandas symbolize strength and grace, YoMee shows that even the smallest creatures can make the biggest impact.
               </p>

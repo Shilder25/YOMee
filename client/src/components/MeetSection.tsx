@@ -3,9 +3,9 @@ import meetTitle from "@assets/image_1760564557081.png";
 
 export default function MeetSection() {
   return (
-    <section className="py-16 md:py-20 lg:py-24 bg-chart-3 dark:bg-chart-3" data-testid="section-meet">
+    <section className="py-12 md:py-14 lg:py-16 bg-chart-3 dark:bg-chart-3" data-testid="section-meet">
       <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
-        <h2 className="mb-12 lg:mb-16" data-testid="heading-meet">
+        <h2 className="mb-6 lg:mb-8" data-testid="heading-meet">
           <span className="sr-only">Meet YoMee!</span>
           <img 
             src={meetTitle} 
@@ -15,9 +15,9 @@ export default function MeetSection() {
           />
         </h2>
         
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+        <div className="grid lg:grid-cols-2 gap-6 lg:gap-8 items-start">
           <div className="order-2 lg:order-1">
-            <div className="space-y-4 text-base md:text-lg text-white leading-relaxed">
+            <div className="space-y-3 text-base md:text-lg text-white leading-relaxed">
               <p>
                 In a country already famous for its adorable animals, it takes something truly special to capture the nation's heart. YoMee (萌萌), the fluffy penguin from a wildlife sanctuary in China, has done exactly that.
               </p>

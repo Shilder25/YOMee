@@ -26,9 +26,9 @@ const steps = [
 
 export default function HowToSection() {
   return (
-    <section className="py-16 md:py-20 lg:py-24 bg-chart-2 dark:bg-chart-2" data-testid="section-howto">
+    <section className="py-12 md:py-14 lg:py-16 bg-chart-2 dark:bg-chart-2" data-testid="section-howto">
       <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
-        <h2 className="mb-12 lg:mb-16" data-testid="heading-howto">
+        <h2 className="mb-6 lg:mb-8" data-testid="heading-howto">
           <span className="sr-only">How to Buy?</span>
           <img 
             src={howToTitle} 
@@ -38,7 +38,7 @@ export default function HowToSection() {
           />
         </h2>
         
-        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+        <div className="grid lg:grid-cols-2 gap-6 lg:gap-8 items-start">
           <div className="order-2 lg:order-1 flex justify-center">
             <div className="relative rounded-2xl overflow-hidden border-4 border-black max-w-sm">
               <img
@@ -51,15 +51,15 @@ export default function HowToSection() {
           </div>
           
           <div className="order-1 lg:order-2">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
               {steps.map((step, index) => (
                 <div
                   key={index}
-                  className="bg-chart-3 dark:bg-chart-3 rounded-2xl p-6 hover-elevate active-elevate-2 transition-all duration-300 cursor-pointer"
+                  className="bg-chart-3 dark:bg-chart-3 rounded-2xl p-4 hover-elevate active-elevate-2 transition-all duration-300 cursor-pointer"
                   data-testid={`card-step-${index + 1}`}
                   onClick={() => console.log(`Step ${step.number} clicked`)}
                 >
-                  <div className="flex flex-col space-y-3">
+                  <div className="flex flex-col space-y-2">
                     <div className="font-heading font-black text-4xl text-white">
                       {step.number}
                     </div>
