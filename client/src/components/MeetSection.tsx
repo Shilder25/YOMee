@@ -1,5 +1,5 @@
 import playingPenguin from "@assets/generated_images/Penguin_playing_in_snow_3cf5fd3c.png";
-import meetTitle from "@assets/generated_images/Meet_YoMee_section_title_a7b27304.png";
+import meetTitle from "@assets/image_1760564557081.png";
 
 export default function MeetSection() {
   return (

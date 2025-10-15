@@ -1,6 +1,6 @@
 import fishPenguin from "@assets/generated_images/Penguin_holding_fish_playfully_be518c79.png";
 import waddlingPenguin from "@assets/generated_images/Penguin_waddling_side_view_157e004b.png";
-import storyTitle from "@assets/generated_images/Bull_Market_story_section_title_6f3d9ef6.png";
+import storyTitle from "@assets/image_1760564583305.png";
 
 export default function StorySection() {
   return (

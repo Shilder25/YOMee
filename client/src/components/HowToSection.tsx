@@ -1,5 +1,5 @@
 import waddlingPenguin from "@assets/generated_images/Penguin_waddling_side_view_157e004b.png";
-import howToTitle from "@assets/generated_images/How_to_Buy_section_title_af2a070c.png";
+import howToTitle from "@assets/image_1760564572305.png";
 
 const steps = [
   {
