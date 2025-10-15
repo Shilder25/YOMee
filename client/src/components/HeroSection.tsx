@@ -9,33 +9,27 @@ export default function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-chart-2 dark:bg-chart-2">
       <div className="absolute top-4 right-4 flex gap-3 z-10">
-        <Button
-          size="icon"
-          variant="ghost"
-          className="bg-black text-white hover-elevate active-elevate-2"
+        <button
+          className="w-14 h-14 md:w-16 md:h-16 rounded-lg bg-black text-white flex items-center justify-center hover-elevate active-elevate-2 transition-transform"
           data-testid="button-twitter"
           onClick={() => console.log('Twitter clicked')}
         >
-          <Twitter className="h-5 w-5" />
-        </Button>
-        <Button
-          size="icon"
-          variant="ghost"
-          className="bg-black text-white hover-elevate active-elevate-2"
+          <Twitter className="h-7 w-7 md:h-8 md:w-8" />
+        </button>
+        <button
+          className="w-14 h-14 md:w-16 md:h-16 rounded-lg bg-black text-white flex items-center justify-center hover-elevate active-elevate-2 transition-transform"
           data-testid="button-tiktok"
           onClick={() => console.log('TikTok clicked')}
         >
-          <SiTiktok className="h-5 w-5" />
-        </Button>
-        <Button
-          size="icon"
-          variant="ghost"
-          className="bg-black text-white hover-elevate active-elevate-2"
+          <SiTiktok className="h-7 w-7 md:h-8 md:w-8" />
+        </button>
+        <button
+          className="w-14 h-14 md:w-16 md:h-16 rounded-lg bg-black text-white flex items-center justify-center hover-elevate active-elevate-2 transition-transform"
           data-testid="button-telegram"
           onClick={() => console.log('Telegram clicked')}
         >
-          <Send className="h-5 w-5" />
-        </Button>
+          <Send className="h-7 w-7 md:h-8 md:w-8" />
+        </button>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-12 md:py-16">

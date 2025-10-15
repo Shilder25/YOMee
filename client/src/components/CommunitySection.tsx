@@ -56,27 +56,27 @@ export default function CommunitySection() {
           </div>
         </div>
 
-        <div className="flex gap-3 justify-center items-center">
+        <div className="flex gap-4 justify-center items-center">
           <button
-            className="w-12 h-12 rounded-md bg-black text-white flex items-center justify-center hover-elevate active-elevate-2"
+            className="w-16 h-16 md:w-20 md:h-20 rounded-lg bg-black text-white flex items-center justify-center hover-elevate active-elevate-2 transition-transform"
             data-testid="button-community-twitter"
             onClick={() => console.log('Twitter clicked')}
           >
-            <Twitter className="h-6 w-6" />
+            <Twitter className="h-8 w-8 md:h-10 md:w-10" />
           </button>
           <button
-            className="w-12 h-12 rounded-md bg-black text-white flex items-center justify-center hover-elevate active-elevate-2"
+            className="w-16 h-16 md:w-20 md:h-20 rounded-lg bg-black text-white flex items-center justify-center hover-elevate active-elevate-2 transition-transform"
             data-testid="button-community-tiktok"
             onClick={() => console.log('TikTok clicked')}
           >
-            <SiTiktok className="h-6 w-6" />
+            <SiTiktok className="h-8 w-8 md:h-10 md:w-10" />
           </button>
           <button
-            className="w-12 h-12 rounded-md bg-black text-white flex items-center justify-center hover-elevate active-elevate-2"
+            className="w-16 h-16 md:w-20 md:h-20 rounded-lg bg-black text-white flex items-center justify-center hover-elevate active-elevate-2 transition-transform"
             data-testid="button-community-telegram"
             onClick={() => console.log('Telegram clicked')}
           >
-            <Send className="h-6 w-6" />
+            <Send className="h-8 w-8 md:h-10 md:w-10" />
           </button>
           </div>
         </div>
