@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Twitter, Send } from "lucide-react";
 import { SiTiktok } from "react-icons/si";
-import heroPenguin from "@assets/generated_images/Cute_penguin_mascot_hero_3e3f625a.png";
+import heroPenguin from "@assets/image_1760558769926.png";
 
 export default function HeroSection() {
   return (
