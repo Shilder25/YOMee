@@ -1,4 +1,4 @@
-import { Twitter, Send } from "lucide-react";
+import { Twitter, Send, Heart } from "lucide-react";
 import { SiTiktok } from "react-icons/si";
 import communityPenguin from "@assets/generated_images/Cute_penguin_mascot_hero_3e3f625a.png";
 
@@ -32,7 +32,7 @@ export default function CommunitySection() {
                 data-testid="img-community-penguin"
               />
               <div className="absolute top-4 right-4 w-12 h-12 rounded-full bg-chart-2 border-4 border-black flex items-center justify-center">
-                <span className="text-2xl">❤️</span>
+                <Heart className="h-6 w-6 text-black fill-black" />
               </div>
             </div>
           </div>
