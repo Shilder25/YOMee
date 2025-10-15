@@ -1,12 +1,19 @@
 import fishPenguin from "@assets/generated_images/Penguin_holding_fish_playfully_be518c79.png";
 import waddlingPenguin from "@assets/generated_images/Penguin_waddling_side_view_157e004b.png";
+import storyTitle from "@assets/generated_images/Bull_Market_story_section_title_6f3d9ef6.png";
 
 export default function StorySection() {
   return (
     <section className="py-16 md:py-20 lg:py-24 bg-chart-3 dark:bg-chart-3" data-testid="section-story">
       <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
-        <h2 className="font-heading font-black text-white text-5xl md:text-6xl lg:text-7xl mb-12 lg:mb-16 uppercase" data-testid="heading-story">
-          A Penguin in a Bull Market!
+        <h2 className="mb-12 lg:mb-16" data-testid="heading-story">
+          <span className="sr-only">A Penguin in a Bull Market!</span>
+          <img 
+            src={storyTitle} 
+            alt="" 
+            className="w-full max-w-2xl mx-auto md:mx-0"
+            role="presentation"
+          />
         </h2>
         
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">

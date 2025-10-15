@@ -1,13 +1,20 @@
 import { Twitter, Send, Heart } from "lucide-react";
 import { SiTiktok } from "react-icons/si";
 import communityPenguin from "@assets/generated_images/Cute_penguin_mascot_hero_3e3f625a.png";
+import communityTitle from "@assets/generated_images/Join_Community_section_title_63218060.png";
 
 export default function CommunitySection() {
   return (
     <section className="py-16 md:py-20 lg:py-24 bg-chart-2 dark:bg-chart-2" data-testid="section-community">
       <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
-        <h2 className="font-heading font-black text-black text-5xl md:text-6xl lg:text-7xl mb-12 lg:mb-16 uppercase" data-testid="heading-community">
-          Join Then Com!
+        <h2 className="mb-12 lg:mb-16" data-testid="heading-community">
+          <span className="sr-only">Join The Com!</span>
+          <img 
+            src={communityTitle} 
+            alt="" 
+            className="w-full max-w-2xl mx-auto md:mx-0"
+            role="presentation"
+          />
         </h2>
         
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-12">

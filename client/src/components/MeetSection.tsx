@@ -1,11 +1,18 @@
 import playingPenguin from "@assets/generated_images/Penguin_playing_in_snow_3cf5fd3c.png";
+import meetTitle from "@assets/generated_images/Meet_YoMee_section_title_a7b27304.png";
 
 export default function MeetSection() {
   return (
     <section className="py-16 md:py-20 lg:py-24 bg-chart-3 dark:bg-chart-3" data-testid="section-meet">
       <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
-        <h2 className="font-heading font-black text-white text-5xl md:text-6xl lg:text-7xl mb-12 lg:mb-16 uppercase" data-testid="heading-meet">
-          Meet YoMee!
+        <h2 className="mb-12 lg:mb-16" data-testid="heading-meet">
+          <span className="sr-only">Meet YoMee!</span>
+          <img 
+            src={meetTitle} 
+            alt="" 
+            className="w-full max-w-2xl mx-auto md:mx-0"
+            role="presentation"
+          />
         </h2>
         
         <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-start">
