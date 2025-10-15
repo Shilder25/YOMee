@@ -17,7 +17,7 @@ export default function CommunitySection() {
           />
         </h2>
         
-        <div className="grid lg:grid-cols-2 gap-6 lg:gap-8 items-center mb-8">
+        <div className="grid lg:grid-cols-2 gap-6 lg:gap-8 items-center mb-6">
           <div className="order-2 lg:order-1">
             <div className="space-y-3 text-base md:text-lg text-black leading-relaxed">
               <p>
@@ -35,7 +35,7 @@ export default function CommunitySection() {
               <img
                 src={communityPenguin}
                 alt="YoMee penguin"
-                className="w-full h-auto p-8"
+                className="w-full h-auto p-6"
                 data-testid="img-community-penguin"
               />
               <div className="absolute top-4 right-4 w-12 h-12 rounded-full bg-chart-2 border-4 border-black flex items-center justify-center">
@@ -45,7 +45,7 @@ export default function CommunitySection() {
           </div>
         </div>
 
-        <div className="flex gap-4 justify-center items-center">
+        <div className="flex gap-3 justify-center items-center">
           <button
             className="w-12 h-12 rounded-md bg-black text-white flex items-center justify-center hover-elevate active-elevate-2"
             data-testid="button-community-twitter"
