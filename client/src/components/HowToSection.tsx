@@ -1,5 +1,5 @@
 import waddlingPenguin from "@assets/generated_images/Penguin_waddling_side_view_157e004b.png";
-import howToTitle from "@assets/generated_images/How_To_Buy_section_title_ea0a34e3.png";
+import howToTitle from "@assets/image-removebg-preview (38)_1760571034682.png";
 import AnimatedSection from "./AnimatedSection";
 import { motion } from "framer-motion";
 

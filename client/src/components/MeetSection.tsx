@@ -1,4 +1,4 @@
-import meetTitle from "@assets/generated_images/Meet_YoMee_section_title_50ebbfeb.png";
+import meetTitle from "@assets/image-removebg-preview (37)_1760571035709.png";
 import DouyinEmbed from "./DouyinEmbed";
 import AnimatedSection from "./AnimatedSection";
 

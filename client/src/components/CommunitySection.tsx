@@ -1,7 +1,7 @@
 import { Twitter, Send, Heart } from "lucide-react";
 import { SiTiktok } from "react-icons/si";
 import communityPenguin from "@assets/generated_images/Cute_penguin_mascot_hero_3e3f625a.png";
-import communityTitle from "@assets/generated_images/Join_Community_section_title_30cbb0f2.png";
+import communityTitle from "@assets/image-removebg-preview (39)_1760571033643.png";
 import AnimatedSection from "./AnimatedSection";
 import { motion } from "framer-motion";
 
