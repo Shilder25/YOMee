@@ -15,7 +15,7 @@ export default function DouyinEmbed({ videoId, autoplay = false, className = "" 
           referrerPolicy="unsafe-url"
           allowFullScreen
           allow="autoplay; fullscreen"
-          style={{ height: '700px' }}
+          style={{ height: '600px' }}
         />
       </div>
     </div>
