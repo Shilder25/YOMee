@@ -1,4 +1,4 @@
-import meetTitle from "@assets/image_1760564557081.png";
+import meetTitle from "@assets/generated_images/Meet_YoMee_section_title_50ebbfeb.png";
 import DouyinEmbed from "./DouyinEmbed";
 import AnimatedSection from "./AnimatedSection";
 
@@ -7,12 +7,12 @@ export default function MeetSection() {
     <section className="py-12 md:py-14 lg:py-16 bg-chart-3 dark:bg-chart-3" data-testid="section-meet">
       <AnimatedSection>
         <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
-          <h2 className="mb-6 lg:mb-8" data-testid="heading-meet">
+          <h2 className="mb-8 lg:mb-12" data-testid="heading-meet">
           <span className="sr-only">Meet YoMee!</span>
           <img 
             src={meetTitle} 
             alt="" 
-            className="w-full max-w-2xl mx-auto md:mx-0"
+            className="w-full max-w-4xl mx-auto"
             role="presentation"
           />
         </h2>

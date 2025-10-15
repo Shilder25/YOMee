@@ -1,5 +1,5 @@
 import waddlingPenguin from "@assets/generated_images/Penguin_waddling_side_view_157e004b.png";
-import howToTitle from "@assets/image_1760564572305.png";
+import howToTitle from "@assets/generated_images/How_To_Buy_section_title_ea0a34e3.png";
 import AnimatedSection from "./AnimatedSection";
 import { motion } from "framer-motion";
 
@@ -31,12 +31,12 @@ export default function HowToSection() {
     <section className="py-12 md:py-14 lg:py-16 bg-chart-2 dark:bg-chart-2" data-testid="section-howto">
       <AnimatedSection>
         <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
-          <h2 className="mb-6 lg:mb-8" data-testid="heading-howto">
+          <h2 className="mb-8 lg:mb-12" data-testid="heading-howto">
           <span className="sr-only">How to Buy?</span>
           <img 
             src={howToTitle} 
             alt="" 
-            className="w-full max-w-2xl mx-auto md:mx-0"
+            className="w-full max-w-4xl mx-auto"
             role="presentation"
           />
         </h2>

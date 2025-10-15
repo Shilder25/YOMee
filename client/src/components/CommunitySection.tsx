@@ -1,7 +1,7 @@
 import { Twitter, Send, Heart } from "lucide-react";
 import { SiTiktok } from "react-icons/si";
 import communityPenguin from "@assets/generated_images/Cute_penguin_mascot_hero_3e3f625a.png";
-import communityTitle from "@assets/image_1760564599690.png";
+import communityTitle from "@assets/generated_images/Join_Community_section_title_30cbb0f2.png";
 import AnimatedSection from "./AnimatedSection";
 import { motion } from "framer-motion";
 
@@ -10,12 +10,12 @@ export default function CommunitySection() {
     <section className="py-12 md:py-14 lg:py-16 bg-chart-2 dark:bg-chart-2" data-testid="section-community">
       <AnimatedSection>
         <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
-          <h2 className="mb-6 lg:mb-8" data-testid="heading-community">
+          <h2 className="mb-8 lg:mb-12" data-testid="heading-community">
           <span className="sr-only">Join The Com!</span>
           <img 
             src={communityTitle} 
             alt="" 
-            className="w-full max-w-2xl mx-auto md:mx-0"
+            className="w-full max-w-4xl mx-auto"
             role="presentation"
           />
         </h2>
