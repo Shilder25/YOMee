@@ -1,5 +1,7 @@
 import waddlingPenguin from "@assets/generated_images/Penguin_waddling_side_view_157e004b.png";
 import howToTitle from "@assets/image_1760564572305.png";
+import AnimatedSection from "./AnimatedSection";
+import { motion } from "framer-motion";
 
 const steps = [
   {
@@ -27,8 +29,9 @@ const steps = [
 export default function HowToSection() {
   return (
     <section className="py-12 md:py-14 lg:py-16 bg-chart-2 dark:bg-chart-2" data-testid="section-howto">
-      <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
-        <h2 className="mb-6 lg:mb-8" data-testid="heading-howto">
+      <AnimatedSection>
+        <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+          <h2 className="mb-6 lg:mb-8" data-testid="heading-howto">
           <span className="sr-only">How to Buy?</span>
           <img 
             src={howToTitle} 
@@ -40,14 +43,18 @@ export default function HowToSection() {
         
         <div className="grid lg:grid-cols-2 gap-6 lg:gap-8 items-start">
           <div className="order-2 lg:order-1 flex justify-center">
-            <div className="relative rounded-2xl overflow-hidden border-4 border-black max-w-sm">
+            <motion.div 
+              className="relative rounded-2xl overflow-hidden border-4 border-black max-w-sm"
+              whileHover={{ scale: 1.03, rotate: 2 }}
+              transition={{ duration: 0.3 }}
+            >
               <img
                 src={waddlingPenguin}
                 alt="YoMee waddling"
                 className="w-full h-auto"
                 data-testid="img-howto-penguin"
               />
-            </div>
+            </motion.div>
           </div>
           
           <div className="order-1 lg:order-2">
@@ -76,8 +83,9 @@ export default function HowToSection() {
               ))}
             </div>
           </div>
+          </div>
         </div>
-      </div>
+      </AnimatedSection>
     </section>
   );
 }

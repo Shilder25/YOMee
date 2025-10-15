@@ -2,6 +2,8 @@ import { Button } from "@/components/ui/button";
 import { Twitter, Send } from "lucide-react";
 import { SiTiktok } from "react-icons/si";
 import heroPenguin from "@assets/image_1760558769926.png";
+import AnimatedSection from "./AnimatedSection";
+import { motion } from "framer-motion";
 
 export default function HeroSection() {
   return (
@@ -38,16 +40,27 @@ export default function HeroSection() {
 
       <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-16 md:py-20">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          <div className="order-1 lg:order-1 flex justify-center lg:justify-start">
+          <motion.div 
+            className="order-1 lg:order-1 flex justify-center lg:justify-start"
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, ease: [0.22, 1, 0.36, 1] }}
+            whileHover={{ scale: 1.05, rotate: 5 }}
+          >
             <img
               src={heroPenguin}
               alt="YoMee the adorable penguin"
               className="w-48 h-48 md:w-64 md:h-64 lg:w-80 lg:h-80 object-contain"
               data-testid="img-hero-penguin"
             />
-          </div>
+          </motion.div>
 
-          <div className="order-2 lg:order-2 text-center lg:text-left">
+          <motion.div 
+            className="order-2 lg:order-2 text-center lg:text-left"
+            initial={{ opacity: 0, x: 50 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
+          >
             <h1 className="font-heading font-black text-6xl md:text-7xl lg:text-8xl mb-2 text-black dark:text-black leading-none uppercase stroke-text">
               YoMee
             </h1>
@@ -82,7 +95,7 @@ export default function HeroSection() {
                 CA: @YoMeePenguin on Douyin
               </p>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
     </section>

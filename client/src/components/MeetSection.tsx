@@ -1,11 +1,13 @@
 import meetTitle from "@assets/image_1760564557081.png";
 import DouyinEmbed from "./DouyinEmbed";
+import AnimatedSection from "./AnimatedSection";
 
 export default function MeetSection() {
   return (
     <section className="py-12 md:py-14 lg:py-16 bg-chart-3 dark:bg-chart-3" data-testid="section-meet">
-      <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
-        <h2 className="mb-6 lg:mb-8" data-testid="heading-meet">
+      <AnimatedSection>
+        <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+          <h2 className="mb-6 lg:mb-8" data-testid="heading-meet">
           <span className="sr-only">Meet YoMee!</span>
           <img 
             src={meetTitle} 
@@ -46,8 +48,9 @@ export default function MeetSection() {
               data-testid="video-meet-penguin"
             />
           </div>
+          </div>
         </div>
-      </div>
+      </AnimatedSection>
     </section>
   );
 }

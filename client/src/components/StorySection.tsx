@@ -1,11 +1,13 @@
 import storyTitle from "@assets/image_1760564583305.png";
 import DouyinEmbed from "./DouyinEmbed";
+import AnimatedSection from "./AnimatedSection";
 
 export default function StorySection() {
   return (
     <section className="py-12 md:py-14 lg:py-16 bg-chart-3 dark:bg-chart-3" data-testid="section-story">
-      <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
-        <h2 className="mb-6 lg:mb-8" data-testid="heading-story">
+      <AnimatedSection>
+        <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
+          <h2 className="mb-6 lg:mb-8" data-testid="heading-story">
           <span className="sr-only">A Penguin in a Bull Market!</span>
           <img 
             src={storyTitle} 
@@ -38,8 +40,9 @@ export default function StorySection() {
               </p>
             </div>
           </div>
+          </div>
         </div>
-      </div>
+      </AnimatedSection>
     </section>
   );
 }
