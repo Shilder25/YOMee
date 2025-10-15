@@ -131,8 +131,15 @@ Preferred communication style: Simple, everyday language.
 - Static penguin character images stored in `attached_assets/`
 - Content markdown file with original reference material
 - AI-generated penguin images for various sections
+- **Section title images** (JunJun-style): AI-generated bold outlined text images for major sections
+  - "MEET YOMEE!", "HOW TO BUY", "JOIN THE COMMUNITY!"
+  - Large display (max-w-4xl) for maximum visual impact
+  - Replaces text-based headings for stronger JunJun reference style
 - **Douyin video embeds**: Real viral penguin videos from Douyin platform integrated via iframe embeds
-  - DouyinEmbed component for responsive video display (340px × 600px fixed dimensions)
+  - DouyinEmbed component for responsive video display
+  - Size: 450px × 800px max (32% larger than original 340×600)
+  - Fully responsive with w-full max-w-[450px] and aspect-ratio: 450/800
+  - 4px black border with p-2 padding wrapper ensuring border visibility
   - Videos showcase authentic YoMee moments from Chinese social media
   - Mix of user-provided images and real viral content for authenticity
 
@@ -183,6 +190,15 @@ Preferred communication style: Simple, everyday language.
 **Interactive Effects**
 - Penguin hover: scale(1.05) + rotate(5deg) transformation
 - Smooth 300ms transition on all hover states
+
+**Social Media Icons (JunJun-style)**:
+- **Hero Section (top right)**: 
+  - Mobile: 56px (w-14 h-14), icon size 28px (h-7 w-7)
+  - Desktop: 64px (w-16 h-16), icon size 32px (h-8 w-8)
+- **Community Section**:
+  - Mobile: 64px (w-16 h-16), icon size 32px (h-8 w-8)
+  - Desktop: 80px (w-20 h-20), icon size 40px (h-10 w-10)
+- All with black background, rounded-lg, and hover-elevate effects
 
 ### Image Hover Effects
 **HowTo Section**
