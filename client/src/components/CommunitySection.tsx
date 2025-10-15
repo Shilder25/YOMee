@@ -1,72 +1,65 @@
-import { Button } from "@/components/ui/button";
-import { Card } from "@/components/ui/card";
-import { Twitter, Instagram, MessageCircle, Globe } from "lucide-react";
+import { Twitter, Send } from "lucide-react";
 import { SiTiktok } from "react-icons/si";
-
-const socialPlatforms = [
-  {
-    name: "Douyin",
-    icon: SiTiktok,
-    handle: "@YoMeePenguin",
-    followers: "2.4M",
-    color: "hover:text-pink-500",
-  },
-  {
-    name: "Weibo",
-    icon: Globe,
-    handle: "@萌萌企鹅YoMee",
-    followers: "1.8M",
-    color: "hover:text-red-500",
-  },
-  {
-    name: "Twitter",
-    icon: Twitter,
-    handle: "@YoMeeOfficial",
-    followers: "890K",
-    color: "hover:text-blue-400",
-  },
-  {
-    name: "Instagram",
-    icon: Instagram,
-    handle: "@yomeepenguin",
-    followers: "650K",
-    color: "hover:text-pink-600",
-  },
-];
+import communityPenguin from "@assets/generated_images/Cute_penguin_mascot_hero_3e3f625a.png";
 
 export default function CommunitySection() {
   return (
-    <section className="py-16 md:py-20 lg:py-24 bg-chart-3 dark:bg-yellow-900" data-testid="section-community">
+    <section className="py-16 md:py-20 lg:py-24 bg-chart-2 dark:bg-chart-2" data-testid="section-community">
       <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
-        <div className="text-center mb-12 lg:mb-16">
-          <h2 className="font-heading font-extrabold text-4xl md:text-5xl lg:text-6xl mb-8 text-foreground" data-testid="heading-community">
-            JOIN THE COMMUNITY!
-          </h2>
-          <p className="text-base md:text-lg text-foreground max-w-3xl mx-auto mb-8">
-            Be part of spreading joy with China's most playful penguin! Follow YoMee's socials, share the adorable story, and bring this curious, heartwarming spirit to fans around the world.
-          </p>
-          <p className="text-base md:text-lg text-foreground max-w-3xl mx-auto">
-            Every post, every supporter, and every fan helps YoMee's happiness reach new heights—together we make the digital ice wonderland a little brighter.
-          </p>
+        <h2 className="font-heading font-black text-black text-5xl md:text-6xl lg:text-7xl mb-12 lg:mb-16 uppercase" data-testid="heading-community">
+          Join Then Com!
+        </h2>
+        
+        <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center mb-12">
+          <div className="order-2 lg:order-1">
+            <div className="space-y-4 text-base md:text-lg text-black leading-relaxed">
+              <p>
+                Join the thousands of YoMee fans as part of a growing community around the fluffiest penguin on the web! Follow for the latest updates from YoMee's daily life and support this adorable journey from ice wonderland to the moon.
+              </p>
+              
+              <p>
+                Follow our socials, share heartwarming posts, join the community, connect with fans. Every share, every heart, every post helps YoMee waddle one step closer to reaching new heights—turning the internet into a warm, fuzzy place one flap at a time.
+              </p>
+            </div>
+          </div>
+          
+          <div className="order-1 lg:order-2 flex justify-center lg:justify-end">
+            <div className="relative rounded-2xl overflow-hidden border-4 border-black max-w-sm bg-chart-3">
+              <img
+                src={communityPenguin}
+                alt="YoMee penguin"
+                className="w-full h-auto p-8"
+                data-testid="img-community-penguin"
+              />
+              <div className="absolute top-4 right-4 w-12 h-12 rounded-full bg-chart-2 border-4 border-black flex items-center justify-center">
+                <span className="text-2xl">❤️</span>
+              </div>
+            </div>
+          </div>
         </div>
 
-        <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-          <Button
-            size="lg"
-            className="font-accent text-base md:text-lg px-10 py-6 rounded-xl hover-elevate active-elevate-2"
-            data-testid="button-follow-all"
-            onClick={() => console.log('Follow on All Platforms clicked')}
+        <div className="flex gap-4 justify-center items-center">
+          <button
+            className="w-12 h-12 rounded-md bg-black text-white flex items-center justify-center hover-elevate active-elevate-2"
+            data-testid="button-community-twitter"
+            onClick={() => console.log('Twitter clicked')}
           >
-            Follow YoMee
-          </Button>
-          <Button
-            size="lg"
-            className="font-accent text-base md:text-lg px-10 py-6 rounded-xl bg-chart-2 text-white border-0 hover-elevate active-elevate-2"
-            data-testid="button-share"
-            onClick={() => console.log('Share YoMee clicked')}
+            <Twitter className="h-6 w-6" />
+          </button>
+          <button
+            className="w-12 h-12 rounded-md bg-black text-white flex items-center justify-center hover-elevate active-elevate-2"
+            data-testid="button-community-tiktok"
+            onClick={() => console.log('TikTok clicked')}
           >
-            Share the Joy
-          </Button>
+            <SiTiktok className="h-6 w-6" />
+          </button>
+          <button
+            className="w-12 h-12 rounded-md bg-black text-white flex items-center justify-center hover-elevate active-elevate-2"
+            data-testid="button-community-telegram"
+            onClick={() => console.log('Telegram clicked')}
+          >
+            <Send className="h-6 w-6" />
+          </button>
         </div>
       </div>
     </section>
