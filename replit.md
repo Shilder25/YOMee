@@ -154,8 +154,28 @@ Preferred communication style: Simple, everyday language.
 - Animations fire once per session using `viewport.once: true`
 - Custom easing curve for smooth, professional motion
 
-### Hero Section Animations
-**On Page Load**
+### Hero Section - Maximum Visual Impact Design
+**Size & Scale (October 2025 Redesign)**
+- **Penguin Image**: Dramatically enlarged from 320px to 500px on desktop (156% increase)
+  - Mobile: 256px (w-64 h-64)
+  - Tablet: 384px (w-96 h-96)  
+  - Desktop: 500px (w-[500px] h-[500px])
+- **Main Title "YoMee"**: text-9xl (128px on desktop) - massive and attention-grabbing
+- **Chinese Title**: text-8xl (96px on desktop)
+- **Subtitle**: text-3xl (30px on desktop) - 50% larger than previous
+- **CTA Buttons**: 
+  - Font size: text-2xl (24px)
+  - Padding: px-12 py-8 for substantial presence
+  - Min height: 60px
+  - Text: "Buy Now" and "Chart" (matching crypto landing page style)
+- **Contract Address Banner**:
+  - Bright pink background (#FF6B9D) with inline style for guaranteed rendering
+  - 4px black border for strong visual separation
+  - Larger text (text-lg on desktop) with generous padding (px-8 py-5)
+  - Rounded corners (rounded-xl)
+- **Spacing Optimization**: Reduced gaps and padding for compact, impactful layout with minimal empty space
+
+**Entrance Animations**
 - Penguin image: slides in from left with fade (800ms duration)
 - Text content: slides in from right with fade (800ms duration, 200ms delay)
 - Staggered entrance creates dynamic first impression
