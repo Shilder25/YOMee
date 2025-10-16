@@ -1,4 +1,4 @@
-import { Twitter, Send, Heart } from "lucide-react";
+import { Twitter, Heart } from "lucide-react";
 import { SiTiktok } from "react-icons/si";
 import communityPenguin from "@assets/generated_images/Cute_penguin_mascot_hero_3e3f625a.png";
 import communityTitle from "@assets/image-removebg-preview (39)_1760571033643.png";
@@ -62,27 +62,24 @@ export default function CommunitySection() {
         </div>
 
         <div className="flex gap-4 justify-center items-center">
-          <button
+          <a
+            href="https://x.com/i/communities/1944840563456663754"
+            target="_blank"
+            rel="noopener noreferrer"
             className="w-16 h-16 md:w-20 md:h-20 rounded-lg bg-black text-white flex items-center justify-center hover-elevate active-elevate-2 transition-transform"
             data-testid="button-community-twitter"
-            onClick={() => console.log('Twitter clicked')}
           >
             <Twitter className="h-8 w-8 md:h-10 md:w-10" />
-          </button>
-          <button
+          </a>
+          <a
+            href="https://www.douyin.com/user/MS4wLjABAAAAGiLz1gg7IgM1EnvH4vaHt7R6o6ZKj7ljzSqyD2Z_8POEukCh9jynF3suM10QbKyl?from_tab_name=main&vid=7456017404477410600"
+            target="_blank"
+            rel="noopener noreferrer"
             className="w-16 h-16 md:w-20 md:h-20 rounded-lg bg-black text-white flex items-center justify-center hover-elevate active-elevate-2 transition-transform"
             data-testid="button-community-tiktok"
-            onClick={() => console.log('TikTok clicked')}
           >
             <SiTiktok className="h-8 w-8 md:h-10 md:w-10" />
-          </button>
-          <button
-            className="w-16 h-16 md:w-20 md:h-20 rounded-lg bg-black text-white flex items-center justify-center hover-elevate active-elevate-2 transition-transform"
-            data-testid="button-community-telegram"
-            onClick={() => console.log('Telegram clicked')}
-          >
-            <Send className="h-8 w-8 md:h-10 md:w-10" />
-          </button>
+          </a>
           </div>
         </div>
       </AnimatedSection>
