@@ -140,7 +140,9 @@ Preferred communication style: Simple, everyday language.
   - DouyinEmbed component for responsive video display
   - Size: 450px × 800px max (32% larger than original 340×600)
   - Fully responsive with w-full max-w-[450px] and aspect-ratio: 450/800
-  - 4px black border flush against iframe edges (no padding/gaps)
+  - Perfect fit design: Wrapper container with border and overflow-hidden, iframe absolutely positioned to fill 100%
+  - 4px black border flush against video with no gaps or white space
+  - Rounded corners (rounded-2xl) properly applied with overflow clipping
   - Videos showcase authentic YoMee moments from Chinese social media
   - Mix of user-provided images and real viral content for authenticity
 
