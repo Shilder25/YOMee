@@ -31,7 +31,7 @@ export default function HeroSection() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
           >
-            <div className="flex gap-3 justify-center lg:justify-start mb-6">
+            <div className="flex gap-3 justify-center lg:justify-start mb-16 md:mb-20 lg:mb-24">
               <button
                 className="w-14 h-14 md:w-16 md:h-16 rounded-lg bg-black text-white flex items-center justify-center hover-elevate active-elevate-2 transition-transform"
                 data-testid="button-twitter"
