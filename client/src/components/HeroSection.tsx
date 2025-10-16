@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Twitter, Send } from "lucide-react";
 import { SiTiktok } from "react-icons/si";
-import heroPenguin from "@assets/image_1760558769926.png";
+import heroPenguin from "@assets/image_1760583073553.png";
 import AnimatedSection from "./AnimatedSection";
 import { motion } from "framer-motion";
 
