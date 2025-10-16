@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Twitter, Send } from "lucide-react";
+import { Twitter } from "lucide-react";
 import { SiTiktok } from "react-icons/si";
 import heroPenguin from "@assets/image_1760583505761.png";
 import AnimatedSection from "./AnimatedSection";
@@ -11,27 +11,24 @@ export default function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-chart-2 dark:bg-chart-2">
       <div className="absolute top-8 md:top-12 lg:top-16 left-1/2 -translate-x-1/2 z-10 flex gap-4 md:gap-5">
-        <button
+        <a
+          href="https://x.com/i/communities/1944840563456663754"
+          target="_blank"
+          rel="noopener noreferrer"
           className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 rounded-lg bg-black text-white flex items-center justify-center hover-elevate active-elevate-2 transition-transform"
           data-testid="button-twitter"
-          onClick={() => console.log('Twitter clicked')}
         >
           <Twitter className="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12" />
-        </button>
-        <button
+        </a>
+        <a
+          href="https://www.douyin.com/user/MS4wLjABAAAAGiLz1gg7IgM1EnvH4vaHt7R6o6ZKj7ljzSqyD2Z_8POEukCh9jynF3suM10QbKyl?from_tab_name=main&vid=7456017404477410600"
+          target="_blank"
+          rel="noopener noreferrer"
           className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 rounded-lg bg-black text-white flex items-center justify-center hover-elevate active-elevate-2 transition-transform"
           data-testid="button-tiktok"
-          onClick={() => console.log('TikTok clicked')}
         >
           <SiTiktok className="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12" />
-        </button>
-        <button
-          className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 rounded-lg bg-black text-white flex items-center justify-center hover-elevate active-elevate-2 transition-transform"
-          data-testid="button-telegram"
-          onClick={() => console.log('Telegram clicked')}
-        >
-          <Send className="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12" />
-        </button>
+        </a>
       </div>
 
       <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8 py-12 md:py-16">
