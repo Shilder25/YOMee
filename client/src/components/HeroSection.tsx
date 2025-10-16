@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Twitter, Send } from "lucide-react";
 import { SiTiktok } from "react-icons/si";
-import heroPenguin from "@assets/image_1760583186455.png";
+import heroPenguin from "@assets/image_1760583505761.png";
 import AnimatedSection from "./AnimatedSection";
 import { motion } from "framer-motion";
 
@@ -44,7 +44,7 @@ export default function HeroSection() {
             <img
               src={heroPenguin}
               alt="YoMee the adorable penguin"
-              className="w-64 h-64 md:w-96 md:h-96 lg:w-[500px] lg:h-[500px] object-contain"
+              className="w-[512px] h-[512px] md:w-[768px] md:h-[768px] lg:w-[1000px] lg:h-[1000px] object-contain"
               data-testid="img-hero-penguin"
             />
           </motion.div>
