@@ -138,15 +138,16 @@ Preferred communication style: Simple, everyday language.
   - Replaces text-based headings for stronger JunJun reference style
 - **Douyin video embeds**: Real viral penguin videos from Douyin platform integrated via iframe embeds
   - DouyinEmbed component for responsive video display
-  - Container: max-w-[450px] with aspect-ratio 9:16 (vertical video standard)
-  - Black background solution: bg-black on container makes gaps blend with black border
-  - Iframe at native 100% size (inset-0 w-full h-full) - no scaling to avoid content cropping
-  - 4px black border with black background creates cohesive visual (no pink gaps visible)
+  - Fixed container sizing: **340px × 672px** (matches Douyin player's exact rendered dimensions)
+  - Border adjusted to fit video (not vice versa) - container sized to match Douyin's fixed player
+  - Iframe fills container completely (w-full h-full block)
+  - 4px black border aligns perfectly with video edges
   - Rounded corners (rounded-2xl) with overflow-hidden
-  - Douyin player displays at natural size without distortion
+  - Video fills entire bordered area with no gaps or spaces
+  - Douyin player displays at natural size without distortion or cropping
   - Videos showcase authentic YoMee moments from Chinese social media
   - Mix of user-provided images and real viral content for authenticity
-  - Note: Douyin's internal player has fixed sizing that cannot be controlled externally
+  - Note: Douyin's internal player has fixed sizing (340×672) that cannot be controlled externally
 
 ## Animation System
 
