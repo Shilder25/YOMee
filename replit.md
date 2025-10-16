@@ -138,11 +138,11 @@ Preferred communication style: Simple, everyday language.
   - Replaces text-based headings for stronger JunJun reference style
 - **Douyin video embeds**: Real viral penguin videos from Douyin platform integrated via iframe embeds
   - DouyinEmbed component for responsive video display
-  - Size: 450px × 800px max (32% larger than original 340×600)
-  - Fully responsive with w-full max-w-[450px] and aspect-ratio: 450/800
-  - Perfect fit design: Wrapper container with border and overflow-hidden, iframe absolutely positioned to fill 100%
-  - 4px black border flush against video with no gaps or white space
-  - Rounded corners (rounded-2xl) properly applied with overflow clipping
+  - Container: max-w-[450px] with aspect-ratio 9:16 (vertical video standard)
+  - Perfect fit solution: Iframe sized 200% width/height, centered with translate(-50%, -50%)
+  - 4px black border flush against video with no pink gaps or spaces
+  - Rounded corners (rounded-2xl) with overflow-hidden clipping excess content
+  - Douyin content fills entire bordered area completely on all viewports
   - Videos showcase authentic YoMee moments from Chinese social media
   - Mix of user-provided images and real viral content for authenticity
 
