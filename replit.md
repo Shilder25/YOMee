@@ -148,11 +148,12 @@ Preferred communication style: Simple, everyday language.
   - Videos showcase authentic YoMee moments from Chinese social media
   - Mix of user-provided images and real viral content for authenticity
   - Note: Douyin's internal player has fixed sizing (340×672) that cannot be controlled externally
-- **Background decorations**: Real YoMee-style penguin plush photos as circular floating elements
-  - BackgroundPenguins component uses 10 authentic stock photos of realistic penguin plushies
-  - Images feature YoMee-style fluffy, realistic penguin dolls similar to the viral Douyin character
+- **Background decorations**: Authentic YoMee penguin photos as circular floating elements
+  - BackgroundPenguins component uses 17 user-provided photos of the real YoMee character
+  - Images are actual photos from the viral Douyin YoMee phenomenon
   - Circular masks with 35% opacity for better visibility
-  - 8 decorative elements per section with varying sizes (140px-180px)
+  - 6-8 decorative elements per section with varying sizes (140px-180px)
+  - Present in all sections EXCEPT Hero: Meet, Story, HowTo, and Community sections
   - Positioned absolutely at z-index 0 behind main content
   - Pointer-events disabled for non-intrusive decoration
 

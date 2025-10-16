@@ -1,20 +1,27 @@
-import penguin1 from "@assets/stock_images/yomee_penguin_plush__2be70961.jpg";
-import penguin2 from "@assets/stock_images/yomee_penguin_plush__14fa11b3.jpg";
-import penguin3 from "@assets/stock_images/yomee_penguin_plush__f33a4c77.jpg";
-import penguin4 from "@assets/stock_images/yomee_penguin_plush__fb4bfe0a.jpg";
-import penguin5 from "@assets/stock_images/yomee_penguin_plush__1346c204.jpg";
-import penguin6 from "@assets/stock_images/realistic_penguin_pl_3fff98e6.jpg";
-import penguin7 from "@assets/stock_images/realistic_penguin_pl_28355db3.jpg";
-import penguin8 from "@assets/stock_images/realistic_penguin_pl_a5695958.jpg";
-import penguin9 from "@assets/stock_images/realistic_penguin_pl_1ce00f22.jpg";
-import penguin10 from "@assets/stock_images/realistic_penguin_pl_49446e2e.jpg";
+import yomee1 from "@assets/image_1760582391376.png";
+import yomee2 from "@assets/image_1760582396165.png";
+import yomee3 from "@assets/image_1760582407741.png";
+import yomee4 from "@assets/image_1760582412908.png";
+import yomee5 from "@assets/image_1760582417909.png";
+import yomee6 from "@assets/image_1760582422963.png";
+import yomee7 from "@assets/image_1760582433162.png";
+import yomee8 from "@assets/image_1760582442627.png";
+import yomee9 from "@assets/image_1760582448371.png";
+import yomee10 from "@assets/image_1760582453469.png";
+import yomee11 from "@assets/image_1760582466508.png";
+import yomee12 from "@assets/image_1760582471807.png";
+import yomee13 from "@assets/image_1760582478875.png";
+import yomee14 from "@assets/image_1760582484318.png";
+import yomee15 from "@assets/image_1760582489812.png";
+import yomee16 from "@assets/image_1760582494597.png";
+import yomee17 from "@assets/image_1760582499035.png";
 
 interface BackgroundPenguinsProps {
   count?: number;
 }
 
 export default function BackgroundPenguins({ count = 8 }: BackgroundPenguinsProps) {
-  const penguins = [penguin1, penguin2, penguin3, penguin4, penguin5, penguin6, penguin7, penguin8, penguin9, penguin10];
+  const penguins = [yomee1, yomee2, yomee3, yomee4, yomee5, yomee6, yomee7, yomee8, yomee9, yomee10, yomee11, yomee12, yomee13, yomee14, yomee15, yomee16, yomee17];
   
   const positions = [
     { top: '8%', left: '5%', size: '180px', delay: 0 },
