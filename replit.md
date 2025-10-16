@@ -148,6 +148,12 @@ Preferred communication style: Simple, everyday language.
   - Videos showcase authentic YoMee moments from Chinese social media
   - Mix of user-provided images and real viral content for authenticity
   - Note: Douyin's internal player has fixed sizing (340×672) that cannot be controlled externally
+- **Background decorations**: Real baby penguin stock photos as circular floating elements
+  - BackgroundPenguins component uses 5 authentic stock photos of baby penguins
+  - Circular masks with 20% opacity for subtle visual interest
+  - 8 decorative elements per section with varying sizes (100px-140px)
+  - Positioned absolutely at z-index 0 behind main content
+  - Pointer-events disabled for non-intrusive decoration
 
 ## Animation System
 
@@ -166,6 +172,15 @@ Preferred communication style: Simple, everyday language.
 - Viewport trigger with -100px margin for early activation
 - Animations fire once per session using `viewport.once: true`
 - Custom easing curve for smooth, professional motion
+- Z-index 1 positioning ensures content layers above background decorations
+
+### Background Animations
+**Floating Penguin Decorations**
+- CSS keyframe animation for background penguin elements
+- 6-second ease-in-out infinite loop
+- Gentle vertical drift with subtle rotation (-25px to 0px movement)
+- Staggered delays (0s to 5.2s) create natural, organic movement
+- Applied to all BackgroundPenguins instances across sections
 
 ### Hero Section - Maximum Visual Impact Design
 **Size & Scale (October 2025 Redesign)**
