@@ -16,8 +16,8 @@ export default function DouyinEmbed({ videoId, autoplay = false, className = "" 
           allowFullScreen
           allow="autoplay; fullscreen"
           style={{ 
-            width: '200%', 
-            height: '200%',
+            width: '145%', 
+            height: '145%',
             left: '50%',
             top: '50%',
             transform: 'translate(-50%, -50%)',
