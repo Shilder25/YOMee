@@ -1,0 +1,11 @@
+node_modules
+.env
+.env.local
+.DS_Store
+*.log
+server
+shared
+.git
+.replit
+replit.nix
+tsconfig.json
