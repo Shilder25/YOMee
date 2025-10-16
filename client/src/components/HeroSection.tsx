@@ -8,27 +8,27 @@ import { motion } from "framer-motion";
 export default function HeroSection() {
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-chart-2 dark:bg-chart-2">
-      <div className="absolute top-8 md:top-12 lg:top-16 left-1/2 -translate-x-1/2 z-10 flex gap-3">
+      <div className="absolute top-8 md:top-12 lg:top-16 left-1/2 -translate-x-1/2 z-10 flex gap-4 md:gap-5">
         <button
-          className="w-14 h-14 md:w-16 md:h-16 rounded-lg bg-black text-white flex items-center justify-center hover-elevate active-elevate-2 transition-transform"
+          className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 rounded-lg bg-black text-white flex items-center justify-center hover-elevate active-elevate-2 transition-transform"
           data-testid="button-twitter"
           onClick={() => console.log('Twitter clicked')}
         >
-          <Twitter className="h-7 w-7 md:h-8 md:w-8" />
+          <Twitter className="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12" />
         </button>
         <button
-          className="w-14 h-14 md:w-16 md:h-16 rounded-lg bg-black text-white flex items-center justify-center hover-elevate active-elevate-2 transition-transform"
+          className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 rounded-lg bg-black text-white flex items-center justify-center hover-elevate active-elevate-2 transition-transform"
           data-testid="button-tiktok"
           onClick={() => console.log('TikTok clicked')}
         >
-          <SiTiktok className="h-7 w-7 md:h-8 md:w-8" />
+          <SiTiktok className="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12" />
         </button>
         <button
-          className="w-14 h-14 md:w-16 md:h-16 rounded-lg bg-black text-white flex items-center justify-center hover-elevate active-elevate-2 transition-transform"
+          className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 rounded-lg bg-black text-white flex items-center justify-center hover-elevate active-elevate-2 transition-transform"
           data-testid="button-telegram"
           onClick={() => console.log('Telegram clicked')}
         >
-          <Send className="h-7 w-7 md:h-8 md:w-8" />
+          <Send className="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12" />
         </button>
       </div>
 
