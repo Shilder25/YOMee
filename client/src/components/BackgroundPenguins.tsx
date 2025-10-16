@@ -1,15 +1,20 @@
-import penguin1 from "@assets/stock_images/cute_baby_penguin_fl_acf2f2e9.jpg";
-import penguin2 from "@assets/stock_images/cute_baby_penguin_fl_034dd642.jpg";
-import penguin3 from "@assets/stock_images/cute_baby_penguin_fl_daa4ddcf.jpg";
-import penguin4 from "@assets/stock_images/cute_baby_penguin_fl_e4128d44.jpg";
-import penguin5 from "@assets/stock_images/cute_baby_penguin_fl_9cb4be71.jpg";
+import penguin1 from "@assets/stock_images/yomee_penguin_plush__2be70961.jpg";
+import penguin2 from "@assets/stock_images/yomee_penguin_plush__14fa11b3.jpg";
+import penguin3 from "@assets/stock_images/yomee_penguin_plush__f33a4c77.jpg";
+import penguin4 from "@assets/stock_images/yomee_penguin_plush__fb4bfe0a.jpg";
+import penguin5 from "@assets/stock_images/yomee_penguin_plush__1346c204.jpg";
+import penguin6 from "@assets/stock_images/realistic_penguin_pl_3fff98e6.jpg";
+import penguin7 from "@assets/stock_images/realistic_penguin_pl_28355db3.jpg";
+import penguin8 from "@assets/stock_images/realistic_penguin_pl_a5695958.jpg";
+import penguin9 from "@assets/stock_images/realistic_penguin_pl_1ce00f22.jpg";
+import penguin10 from "@assets/stock_images/realistic_penguin_pl_49446e2e.jpg";
 
 interface BackgroundPenguinsProps {
   count?: number;
 }
 
 export default function BackgroundPenguins({ count = 8 }: BackgroundPenguinsProps) {
-  const penguins = [penguin1, penguin2, penguin3, penguin4, penguin5];
+  const penguins = [penguin1, penguin2, penguin3, penguin4, penguin5, penguin6, penguin7, penguin8, penguin9, penguin10];
   
   const positions = [
     { top: '8%', left: '5%', size: '180px', delay: 0 },
