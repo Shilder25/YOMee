@@ -5,15 +5,18 @@ import communityTitle from "@assets/image-removebg-preview (39)_1760571033643.pn
 import AnimatedSection from "./AnimatedSection";
 import BackgroundPenguins from "./BackgroundPenguins";
 import { motion } from "framer-motion";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function CommunitySection() {
+  const { t } = useLanguage();
+  
   return (
     <section className="relative py-12 md:py-14 lg:py-16 bg-chart-2 dark:bg-chart-2" data-testid="section-community">
       <BackgroundPenguins count={6} offset={12} />
       <AnimatedSection>
         <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
           <h2 className="mb-8 lg:mb-12" data-testid="heading-community">
-          <span className="sr-only">Join The Com!</span>
+          <span className="sr-only">{t('community.title')}</span>
           <img 
             src={communityTitle} 
             alt="" 
@@ -26,11 +29,11 @@ export default function CommunitySection() {
           <div className="order-2 lg:order-1">
             <div className="space-y-3 text-base md:text-lg text-black leading-relaxed">
               <p>
-                Join the thousands of YoMee fans as part of a growing community around the fluffiest penguin on the web! Follow for the latest updates from YoMee's daily life and support this adorable journey from ice wonderland to the moon.
+                {t('community.p1')}
               </p>
               
               <p>
-                Follow our socials, share heartwarming posts, join the community, connect with fans. Every share, every heart, every post helps YoMee waddle one step closer to reaching new heights—turning the internet into a warm, fuzzy place one flap at a time.
+                {t('community.p2')}
               </p>
             </div>
           </div>

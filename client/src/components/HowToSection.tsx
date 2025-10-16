@@ -3,38 +3,40 @@ import howToTitle from "@assets/image-removebg-preview (38)_1760571034682.png";
 import AnimatedSection from "./AnimatedSection";
 import BackgroundPenguins from "./BackgroundPenguins";
 import { motion } from "framer-motion";
-
-const steps = [
-  {
-    number: "01",
-    title: "Create Wallet",
-    description: "Open your favorite wallet app and create a new wallet to store your YoMee tokens.",
-  },
-  {
-    number: "02",
-    title: "Fund BNB",
-    description: "Purchase BNB from an exchange and send it to your wallet address.",
-  },
-  {
-    number: "03",
-    title: "Swap Tokens",
-    description: "Use a DEX to swap your BNB for YoMee tokens using the contract address.",
-  },
-  {
-    number: "04",
-    title: "Enjoy $$$",
-    description: "Congratulations! You're now part of the YoMee family. Watch your investment grow!",
-  },
-];
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function HowToSection() {
+  const { t } = useLanguage();
+  
+  const steps = [
+    {
+      number: t('howto.step1.number'),
+      title: t('howto.step1.title'),
+      description: t('howto.step1.desc'),
+    },
+    {
+      number: t('howto.step2.number'),
+      title: t('howto.step2.title'),
+      description: t('howto.step2.desc'),
+    },
+    {
+      number: t('howto.step3.number'),
+      title: t('howto.step3.title'),
+      description: t('howto.step3.desc'),
+    },
+    {
+      number: t('howto.step4.number'),
+      title: t('howto.step4.title'),
+      description: t('howto.step4.desc'),
+    },
+  ];
   return (
     <section className="relative py-12 md:py-14 lg:py-16 bg-chart-2 dark:bg-chart-2" data-testid="section-howto">
       <BackgroundPenguins count={6} offset={8} />
       <AnimatedSection>
         <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
           <h2 className="mb-8 lg:mb-12" data-testid="heading-howto">
-          <span className="sr-only">How to Buy?</span>
+          <span className="sr-only">{t('howto.title')}</span>
           <img 
             src={howToTitle} 
             alt="" 

@@ -2,15 +2,18 @@ import meetTitle from "@assets/image-removebg-preview (37)_1760571035709.png";
 import DouyinEmbed from "./DouyinEmbed";
 import AnimatedSection from "./AnimatedSection";
 import BackgroundPenguins from "./BackgroundPenguins";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function MeetSection() {
+  const { t } = useLanguage();
+  
   return (
     <section className="relative py-12 md:py-14 lg:py-16 bg-chart-3 dark:bg-chart-3" data-testid="section-meet">
       <BackgroundPenguins count={6} offset={0} />
       <AnimatedSection>
         <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
           <h2 className="mb-8 lg:mb-12" data-testid="heading-meet">
-          <span className="sr-only">Meet YoMee!</span>
+          <span className="sr-only">{t('meet.title')}</span>
           <img 
             src={meetTitle} 
             alt="" 
@@ -23,23 +26,23 @@ export default function MeetSection() {
           <div className="order-2 lg:order-1">
             <div className="space-y-3 text-base md:text-lg text-white leading-relaxed">
               <p>
-                In a country already famous for its adorable animals, it takes something truly special to capture the nation's heart. YoMee (萌萌), the fluffy penguin from a wildlife sanctuary in China, has done exactly that.
+                {t('meet.p1')}
               </p>
               
               <p>
-                With big round eyes, soft downy feathers, and an irresistibly clumsy waddle, YoMee has become the darling of Chinese social media. Every video of this precious penguin tumbling, playing, or nibbling on fish spreads like wildfire across Douyin, Weibo, and Xiaohongshu.
+                {t('meet.p2')}
               </p>
               
               <p>
-                Fans say YoMee has the soul of a playful child. One moment waddling confidently, the next sliding belly-first into a snowbank. YoMee's playful innocence feels raw and real.
+                {t('meet.p3')}
               </p>
               
               <p className="font-bold">
-                In a world that moves too fast, YoMee reminds millions to pause, smile, and feel that warm fuzzy feeling.
+                {t('meet.p4')}
               </p>
               
               <p>
-                YoMee is China's little penguin with a big heart, the fluffy friend who turned the internet into one big, happy ice wonderland.
+                {t('meet.p5')}
               </p>
             </div>
           </div>

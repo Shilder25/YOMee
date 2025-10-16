@@ -4,8 +4,10 @@ import { SiTiktok } from "react-icons/si";
 import heroPenguin from "@assets/image_1760583505761.png";
 import AnimatedSection from "./AnimatedSection";
 import { motion } from "framer-motion";
+import { useLanguage } from "@/contexts/LanguageContext";
 
 export default function HeroSection() {
+  const { t } = useLanguage();
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-chart-2 dark:bg-chart-2">
       <div className="absolute top-8 md:top-12 lg:top-16 left-1/2 -translate-x-1/2 z-10 flex gap-4 md:gap-5">
@@ -56,13 +58,13 @@ export default function HeroSection() {
             transition={{ duration: 0.8, delay: 0.2, ease: [0.22, 1, 0.36, 1] }}
           >
             <h1 className="font-heading font-black text-7xl md:text-8xl lg:text-9xl mb-3 text-black dark:text-black leading-none uppercase stroke-text">
-              YoMee
+              {t('hero.title')}
             </h1>
             <h2 className="font-heading font-black text-6xl md:text-7xl lg:text-8xl mb-8 text-black dark:text-black leading-none">
-              萌萌企鹅
+              {t('hero.subtitle')}
             </h2>
             <p className="text-xl md:text-2xl lg:text-3xl mb-10 text-black dark:text-black font-bold">
-              China's most adorable internet star
+              {t('hero.description')}
             </p>
             
             <div className="flex flex-col sm:flex-row gap-5 justify-center lg:justify-start mb-8">
@@ -72,7 +74,7 @@ export default function HeroSection() {
                 data-testid="button-follow"
                 onClick={() => console.log('Follow Now clicked')}
               >
-                Buy Now
+                {t('hero.buyNow')}
               </Button>
               <Button
                 size="lg"
@@ -80,13 +82,13 @@ export default function HeroSection() {
                 data-testid="button-watch"
                 onClick={() => console.log('Watch Videos clicked')}
               >
-                Chart
+                {t('hero.chart')}
               </Button>
             </div>
 
             <div className="inline-block rounded-xl px-8 py-5 border-4 border-black" style={{ backgroundColor: '#FF6B9D' }}>
               <p className="text-base md:text-lg text-white font-mono font-bold" data-testid="text-social-handle">
-                CA: @YoMeePenguin on Douyin
+                {t('hero.contractAddress')}
               </p>
             </div>
           </motion.div>

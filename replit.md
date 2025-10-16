@@ -8,6 +8,30 @@ YoMee is a character-centric landing page featuring a viral Chinese penguin masc
 
 Preferred communication style: Simple, everyday language.
 
+## Language Support
+
+**Internationalization System**
+- **Primary Language**: Chinese (zh) - default language for all content
+- **Secondary Language**: English (en) - available via language selector
+- **Language Selector**: Fixed top-left button with globe icon to toggle between languages
+- **Persistence**: Language preference saved in localStorage as 'yomee-language'
+
+**Translation Coverage**
+- All user-facing content is fully translated:
+  - Hero section (title, subtitle, description, CTAs, contract address)
+  - Meet YoMee section (5 paragraphs of content)
+  - Story section (3 paragraphs about YoMee's journey)
+  - How to Buy section (4 step-by-step instructions with titles and descriptions)
+  - Community section (2 paragraphs encouraging engagement)
+  - Footer (disclaimer and copyright)
+
+**Technical Implementation**
+- React Context API for state management (LanguageContext)
+- Custom useLanguage hook for accessing translations
+- Translation keys structured by section (e.g., 'hero.title', 'meet.p1')
+- Centralized translation object in LanguageContext.tsx
+- Components dynamically render content based on selected language
+
 ## System Architecture
 
 ### Frontend Architecture
