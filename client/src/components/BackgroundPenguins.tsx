@@ -12,14 +12,14 @@ export default function BackgroundPenguins({ count = 8 }: BackgroundPenguinsProp
   const penguins = [penguin1, penguin2, penguin3, penguin4, penguin5];
   
   const positions = [
-    { top: '8%', left: '5%', size: '140px', delay: 0 },
-    { top: '20%', right: '6%', size: '120px', delay: 0.8 },
-    { top: '45%', left: '4%', size: '110px', delay: 1.5 },
-    { top: '65%', right: '7%', size: '130px', delay: 2.2 },
-    { top: '82%', left: '8%', size: '115px', delay: 3 },
-    { top: '35%', right: '10%', size: '105px', delay: 3.8 },
-    { top: '55%', left: '12%', size: '125px', delay: 4.5 },
-    { top: '75%', right: '4%', size: '100px', delay: 5.2 },
+    { top: '8%', left: '5%', size: '180px', delay: 0 },
+    { top: '20%', right: '6%', size: '160px', delay: 0.8 },
+    { top: '45%', left: '4%', size: '150px', delay: 1.5 },
+    { top: '65%', right: '7%', size: '170px', delay: 2.2 },
+    { top: '82%', left: '8%', size: '155px', delay: 3 },
+    { top: '35%', right: '10%', size: '145px', delay: 3.8 },
+    { top: '55%', left: '12%', size: '165px', delay: 4.5 },
+    { top: '75%', right: '4%', size: '140px', delay: 5.2 },
   ];
 
   return (
@@ -27,7 +27,7 @@ export default function BackgroundPenguins({ count = 8 }: BackgroundPenguinsProp
       {positions.slice(0, count).map((pos, index) => (
         <div
           key={index}
-          className="absolute rounded-full opacity-20 animate-float"
+          className="absolute rounded-full opacity-35 animate-float"
           style={{
             top: pos.top,
             left: pos.left,

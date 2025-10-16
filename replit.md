@@ -150,8 +150,8 @@ Preferred communication style: Simple, everyday language.
   - Note: Douyin's internal player has fixed sizing (340×672) that cannot be controlled externally
 - **Background decorations**: Real baby penguin stock photos as circular floating elements
   - BackgroundPenguins component uses 5 authentic stock photos of baby penguins
-  - Circular masks with 20% opacity for subtle visual interest
-  - 8 decorative elements per section with varying sizes (100px-140px)
+  - Circular masks with 35% opacity for better visibility
+  - 8 decorative elements per section with varying sizes (140px-180px)
   - Positioned absolutely at z-index 0 behind main content
   - Pointer-events disabled for non-intrusive decoration
 
