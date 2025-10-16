@@ -7,15 +7,16 @@ interface DouyinEmbedProps {
 export default function DouyinEmbed({ videoId, autoplay = false, className = "" }: DouyinEmbedProps) {
   return (
     <div className="flex justify-center lg:justify-start">
-      <iframe
-        className={`rounded-2xl border-4 border-black w-full max-w-[450px] ${className}`}
-        src={`https://open.douyin.com/player/video?vid=${videoId}&autoplay=${autoplay ? '1' : '0'}`}
-        frameBorder="0"
-        referrerPolicy="unsafe-url"
-        allowFullScreen
-        allow="autoplay; fullscreen"
-        style={{ aspectRatio: '450/800', height: 'auto' }}
-      />
+      <div className="relative w-full max-w-[450px] rounded-2xl border-4 border-black overflow-hidden" style={{ aspectRatio: '450/800' }}>
+        <iframe
+          className={`absolute inset-0 w-full h-full ${className}`}
+          src={`https://open.douyin.com/player/video?vid=${videoId}&autoplay=${autoplay ? '1' : '0'}`}
+          frameBorder="0"
+          referrerPolicy="unsafe-url"
+          allowFullScreen
+          allow="autoplay; fullscreen"
+        />
+      </div>
     </div>
   );
 }
