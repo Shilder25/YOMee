@@ -44,7 +44,7 @@ export default function HeroSection() {
             <img
               src={heroPenguin}
               alt="YoMee the adorable penguin"
-              className="w-64 h-64 md:w-96 md:h-96 lg:w-[500px] lg:h-[500px] object-contain"
+              className="w-[768px] h-[768px] md:w-[1152px] md:h-[1152px] lg:w-[1500px] lg:h-[1500px] object-contain"
               data-testid="img-hero-penguin"
             />
           </motion.div>
