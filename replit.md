@@ -131,15 +131,16 @@ Preferred communication style: Simple, everyday language.
 - Static penguin character images stored in `attached_assets/`
 - Content markdown file with original reference material
 - AI-generated penguin images for various sections
-- **Section title images** (JunJun-style): AI-generated bold outlined text images for major sections
+- **Section title images** (JunJun-style): Custom bold outlined text images for major sections
   - "MEET YOMEE!", "HOW TO BUY", "JOIN THE COMMUNITY!"
   - Large display (max-w-4xl) for maximum visual impact
+  - User-provided custom designs with transparent backgrounds
   - Replaces text-based headings for stronger JunJun reference style
 - **Douyin video embeds**: Real viral penguin videos from Douyin platform integrated via iframe embeds
   - DouyinEmbed component for responsive video display
   - Size: 450px × 800px max (32% larger than original 340×600)
   - Fully responsive with w-full max-w-[450px] and aspect-ratio: 450/800
-  - 4px black border with p-2 padding wrapper ensuring border visibility
+  - 4px black border flush against iframe edges (no padding/gaps)
   - Videos showcase authentic YoMee moments from Chinese social media
   - Mix of user-provided images and real viral content for authenticity
 
