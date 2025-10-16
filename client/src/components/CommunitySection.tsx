@@ -3,11 +3,13 @@ import { SiTiktok } from "react-icons/si";
 import communityPenguin from "@assets/generated_images/Cute_penguin_mascot_hero_3e3f625a.png";
 import communityTitle from "@assets/image-removebg-preview (39)_1760571033643.png";
 import AnimatedSection from "./AnimatedSection";
+import BackgroundPenguins from "./BackgroundPenguins";
 import { motion } from "framer-motion";
 
 export default function CommunitySection() {
   return (
-    <section className="py-12 md:py-14 lg:py-16 bg-chart-2 dark:bg-chart-2" data-testid="section-community">
+    <section className="relative py-12 md:py-14 lg:py-16 bg-chart-2 dark:bg-chart-2" data-testid="section-community">
+      <BackgroundPenguins count={6} />
       <AnimatedSection>
         <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
           <h2 className="mb-8 lg:mb-12" data-testid="heading-community">

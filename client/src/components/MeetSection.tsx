@@ -1,10 +1,12 @@
 import meetTitle from "@assets/image-removebg-preview (37)_1760571035709.png";
 import DouyinEmbed from "./DouyinEmbed";
 import AnimatedSection from "./AnimatedSection";
+import BackgroundPenguins from "./BackgroundPenguins";
 
 export default function MeetSection() {
   return (
-    <section className="py-12 md:py-14 lg:py-16 bg-chart-3 dark:bg-chart-3" data-testid="section-meet">
+    <section className="relative py-12 md:py-14 lg:py-16 bg-chart-3 dark:bg-chart-3" data-testid="section-meet">
+      <BackgroundPenguins count={6} />
       <AnimatedSection>
         <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
           <h2 className="mb-8 lg:mb-12" data-testid="heading-meet">

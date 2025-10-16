@@ -1,6 +1,7 @@
 import waddlingPenguin from "@assets/generated_images/Penguin_waddling_side_view_157e004b.png";
 import howToTitle from "@assets/image-removebg-preview (38)_1760571034682.png";
 import AnimatedSection from "./AnimatedSection";
+import BackgroundPenguins from "./BackgroundPenguins";
 import { motion } from "framer-motion";
 
 const steps = [
@@ -28,7 +29,8 @@ const steps = [
 
 export default function HowToSection() {
   return (
-    <section className="py-12 md:py-14 lg:py-16 bg-chart-2 dark:bg-chart-2" data-testid="section-howto">
+    <section className="relative py-12 md:py-14 lg:py-16 bg-chart-2 dark:bg-chart-2" data-testid="section-howto">
+      <BackgroundPenguins count={6} />
       <AnimatedSection>
         <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
           <h2 className="mb-8 lg:mb-12" data-testid="heading-howto">

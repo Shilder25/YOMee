@@ -1,22 +1,25 @@
-import penguinFront from "@assets/generated_images/Cute_YoMee_penguin_front_d3cea83e.png";
-import penguinJumping from "@assets/generated_images/YoMee_penguin_jumping_happy_73c1e57a.png";
-import penguinSitting from "@assets/generated_images/YoMee_penguin_sitting_curious_f0c4d666.png";
-import penguinWaving from "@assets/generated_images/YoMee_penguin_waving_hello_d1ffa465.png";
+import penguin1 from "@assets/stock_images/cute_baby_penguin_fl_acf2f2e9.jpg";
+import penguin2 from "@assets/stock_images/cute_baby_penguin_fl_034dd642.jpg";
+import penguin3 from "@assets/stock_images/cute_baby_penguin_fl_daa4ddcf.jpg";
+import penguin4 from "@assets/stock_images/cute_baby_penguin_fl_e4128d44.jpg";
+import penguin5 from "@assets/stock_images/cute_baby_penguin_fl_9cb4be71.jpg";
 
 interface BackgroundPenguinsProps {
   count?: number;
 }
 
-export default function BackgroundPenguins({ count = 6 }: BackgroundPenguinsProps) {
-  const penguins = [penguinFront, penguinJumping, penguinSitting, penguinWaving];
+export default function BackgroundPenguins({ count = 8 }: BackgroundPenguinsProps) {
+  const penguins = [penguin1, penguin2, penguin3, penguin4, penguin5];
   
   const positions = [
-    { top: '10%', left: '5%', size: '120px', delay: 0 },
-    { top: '25%', right: '8%', size: '100px', delay: 0.5 },
-    { top: '50%', left: '3%', size: '90px', delay: 1 },
-    { top: '70%', right: '5%', size: '110px', delay: 1.5 },
-    { top: '85%', left: '10%', size: '95px', delay: 2 },
-    { top: '40%', right: '12%', size: '85px', delay: 2.5 },
+    { top: '8%', left: '5%', size: '140px', delay: 0 },
+    { top: '20%', right: '6%', size: '120px', delay: 0.8 },
+    { top: '45%', left: '4%', size: '110px', delay: 1.5 },
+    { top: '65%', right: '7%', size: '130px', delay: 2.2 },
+    { top: '82%', left: '8%', size: '115px', delay: 3 },
+    { top: '35%', right: '10%', size: '105px', delay: 3.8 },
+    { top: '55%', left: '12%', size: '125px', delay: 4.5 },
+    { top: '75%', right: '4%', size: '100px', delay: 5.2 },
   ];
 
   return (
@@ -24,7 +27,7 @@ export default function BackgroundPenguins({ count = 6 }: BackgroundPenguinsProp
       {positions.slice(0, count).map((pos, index) => (
         <div
           key={index}
-          className="absolute rounded-full opacity-15 animate-float"
+          className="absolute rounded-full opacity-20 animate-float"
           style={{
             top: pos.top,
             left: pos.left,

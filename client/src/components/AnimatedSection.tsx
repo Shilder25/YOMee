@@ -9,6 +9,8 @@ interface AnimatedSectionProps {
 export default function AnimatedSection({ children, delay = 0 }: AnimatedSectionProps) {
   return (
     <motion.div
+      className="relative"
+      style={{ zIndex: 1 }}
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: "-100px" }}
