@@ -6,7 +6,7 @@ import BackgroundPenguins from "./BackgroundPenguins";
 export default function StorySection() {
   return (
     <section className="relative py-12 md:py-14 lg:py-16 bg-chart-3 dark:bg-chart-3" data-testid="section-story">
-      <BackgroundPenguins count={6} />
+      <BackgroundPenguins count={6} offset={4} />
       <AnimatedSection>
         <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
           <h2 className="mb-6 lg:mb-8" data-testid="heading-story">

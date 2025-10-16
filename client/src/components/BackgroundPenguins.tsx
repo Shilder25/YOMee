@@ -18,9 +18,10 @@ import yomee17 from "@assets/image_1760582499035.png";
 
 interface BackgroundPenguinsProps {
   count?: number;
+  offset?: number;
 }
 
-export default function BackgroundPenguins({ count = 8 }: BackgroundPenguinsProps) {
+export default function BackgroundPenguins({ count = 8, offset = 0 }: BackgroundPenguinsProps) {
   const penguins = [yomee1, yomee2, yomee3, yomee4, yomee5, yomee6, yomee7, yomee8, yomee9, yomee10, yomee11, yomee12, yomee13, yomee14, yomee15, yomee16, yomee17];
   
   const positions = [
@@ -50,7 +51,7 @@ export default function BackgroundPenguins({ count = 8 }: BackgroundPenguinsProp
           }}
         >
           <img
-            src={penguins[index % penguins.length]}
+            src={penguins[(index + offset) % penguins.length]}
             alt=""
             className="w-full h-full object-cover rounded-full"
             role="presentation"

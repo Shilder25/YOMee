@@ -30,7 +30,7 @@ const steps = [
 export default function HowToSection() {
   return (
     <section className="relative py-12 md:py-14 lg:py-16 bg-chart-2 dark:bg-chart-2" data-testid="section-howto">
-      <BackgroundPenguins count={6} />
+      <BackgroundPenguins count={6} offset={8} />
       <AnimatedSection>
         <div className="max-w-7xl mx-auto px-4 md:px-6 lg:px-8">
           <h2 className="mb-8 lg:mb-12" data-testid="heading-howto">
