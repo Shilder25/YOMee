@@ -63,7 +63,7 @@ export default function CommunitySection() {
 
         <div className="flex gap-4 justify-center items-center">
           <a
-            href="https://x.com/i/communities/1944840563456663754"
+            href="https://x.com/i/communities/1995354029581296039"
             target="_blank"
             rel="noopener noreferrer"
             className="w-16 h-16 md:w-20 md:h-20 rounded-lg bg-black text-white flex items-center justify-center hover-elevate active-elevate-2 transition-transform"
