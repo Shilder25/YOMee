@@ -12,7 +12,7 @@ export default function HeroSection() {
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-chart-2 dark:bg-chart-2">
       <div className="absolute top-8 md:top-12 lg:top-16 left-1/2 -translate-x-1/2 z-10 flex gap-4 md:gap-5">
         <a
-          href="https://x.com/i/communities/1944840563456663754"
+          href="https://x.com/i/communities/1995354029581296039"
           target="_blank"
           rel="noopener noreferrer"
           className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 rounded-lg bg-black text-white flex items-center justify-center hover-elevate active-elevate-2 transition-transform"
