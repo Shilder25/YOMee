@@ -72,7 +72,7 @@ export default function CommunitySection() {
             <Twitter className="h-8 w-8 md:h-10 md:w-10" />
           </a>
           <a
-            href="https://www.douyin.com/user/MS4wLjABAAAAGiLz1gg7IgM1EnvH4vaHt7R6o6ZKj7ljzSqyD2Z_8POEukCh9jynF3suM10QbKyl?from_tab_name=main&vid=7456017404477410600"
+            href="https://www.douyin.com/search/yomee"
             target="_blank"
             rel="noopener noreferrer"
             className="w-16 h-16 md:w-20 md:h-20 rounded-lg bg-black text-white flex items-center justify-center hover-elevate active-elevate-2 transition-transform"
