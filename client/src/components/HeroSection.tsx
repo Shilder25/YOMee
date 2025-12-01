@@ -21,7 +21,7 @@ export default function HeroSection() {
           <Twitter className="h-8 w-8 md:h-10 md:w-10 lg:h-12 lg:w-12" />
         </a>
         <a
-          href="hhttps://www.douyin.com/search/yomee"
+          href="https://www.douyin.com/search/yomee"
           target="_blank"
           rel="noopener noreferrer"
           className="w-16 h-16 md:w-20 md:h-20 lg:w-24 lg:h-24 rounded-lg bg-black text-white flex items-center justify-center hover-elevate active-elevate-2 transition-transform"
