@@ -16,7 +16,7 @@ const translations = {
     'hero.description': '中国最可爱的网红',
     'hero.buyNow': '立即购买',
     'hero.chart': '图表',
-    'hero.contractAddress': 'CA:0x9cf86906120c238fa720917c012fb6aa5e4f4444',
+    'hero.contractAddress': 'CA:SOON',
     
     // Meet Section
     'meet.title': '认识 YoMee！',
